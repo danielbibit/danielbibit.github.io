@@ -1,20 +1,17 @@
 # Site settings
-title_left    : "Think"
-title_right   : "space" # default: ""
+title_left    : "Daniel"
+title_right   : "Moraes" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
-url           : https://heiswayi.github.io/thinkspace # site url
+url           : https://moraes.dev.br # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
 google_analytics  : UA-XXXXX-XX
-twitter_username  : ""
-comments_enabled  : false # if enabled (set to true), please provide your disqus_username
-disqus_shortname  : ""
-postshare_enabled : false
 
 # Build settings
-permalink   : /:year/:title/
+# permalink   : /:year/:title/
+permalink: pretty
 markdown    : kramdown
 highlighter : rouge
 
@@ -28,19 +25,23 @@ sass:
 
 # Author settings
 author:
-  name     : "John Doe"
+  name     : "Daniel Moraes"
 
-plugins:
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug
+
+plugins_dir:
   - jekyll-sitemap
   - bourbon
   - jekyll-paginate
-
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
 
 exclude:
   - "gulp"
