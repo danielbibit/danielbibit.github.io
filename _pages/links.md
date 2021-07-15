@@ -5,7 +5,8 @@ permalink: /links/
 ---
 
 
-@icon-linkedin [Linkedin](https://www.linkedin.com/in/moraes-daniel/)
+<i class='fa fa-home'></i>
+[Linkedin](https://www.linkedin.com/in/moraes-daniel/)
 
 [Github](https://github.com/danielbibit)
 
