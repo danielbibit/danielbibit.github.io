@@ -3,8 +3,8 @@ layout: page
 title: Links
 permalink: /links/
 ---
-
-
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<i class="fab fa-linkedin-in"></i>
 
 [Linkedin](https://www.linkedin.com/in/moraes-daniel/)
 
