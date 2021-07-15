@@ -4,6 +4,11 @@ title: Links
 permalink: /links/
 ---
 
-link1
-link2
-link3
+
+@icon-linkedin [Linkedin](https://www.linkedin.com/in/moraes-daniel/)
+
+[Github](https://github.com/danielbibit)
+
+[Gitlab](https://gitlab.com/danielbibit)
+
+[BGG](https://boardgamegeek.com)
