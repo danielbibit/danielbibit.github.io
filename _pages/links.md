@@ -5,11 +5,15 @@ permalink: /links/
 ---
 
 
-<i class='fa fa-home'></i>
+
 [Linkedin](https://www.linkedin.com/in/moraes-daniel/)
 
 [Github](https://github.com/danielbibit)
 
 [Gitlab](https://gitlab.com/danielbibit)
 
-[BGG](https://boardgamegeek.com)
+[Instagram](https://www.instagram.com/danielbibit/)
+
+[Reddit](https://www.reddit.com/user/danielbibit)
+
+[BGG](https://boardgamegeek.com/user/danielbibit)
