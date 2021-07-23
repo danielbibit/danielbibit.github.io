@@ -85,9 +85,9 @@ container managment like portainer, but it's way much.
 Then, I found Glances. It runs inside a container, and just give me a nice screen with all the info
 I need, and on top of that, it has a really nice integration with home assitant.
 
-![Glances](/assets/glances_screen.png)
+![Glances](/assets/images/glances_screen.png)
 
-![Glances ingration](/assets/glances_homeassistant.png)
+![Glances ingration](/assets/images/glances_homeassistant.png)
 
 ## Storage
 Nothing to change here, back then I spent over a week studying and researching about file systems,
