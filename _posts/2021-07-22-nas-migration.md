@@ -12,9 +12,9 @@ Taking advantage of my last week of vacation, I decided to take the task of upda
 My NAS server is the most important piece of tech infrastructure in my home, it acts as:
 * A NAS, making my HDS redudant using RAID, pooling these HDs, presenting them to me as one big
 disk; And sharing my files to other devices through SAMBA.
-* A entertaiment server, serving music, movies and series to my other devices usin Plex.
-* A development server, hosting virtual machines for my projects, alowing me to access them remotly.
-* The host of my Home Assist OS, when this machine goes down, my lights won't event turn on!
+* A entertaiment server, serving music, movies and series to my other devices using Plex.
+* A development server, hosting virtual machines for my projects, allowing me to access them remotely.
+* The host of my Home Assist OS, when this machine goes down, my lights won't even turn on!
 
 ## OS
 I was using a OS called OpenMediaVault, it is designed exactly for my use case, it's based on
@@ -26,17 +26,17 @@ I installed the OS on may of 2018, and the server has been running almost flawle
 ## Storage
 * **System Drive**: 256GB nvme SSD using a USB adaptor.
 
-* **ZFS**: two HDs in RAID1 (mirror in zfs lang). I use this to keep my personal files, vms,
+* **ZFS**: 2 HDs in RAID1 (mirror in zfs lang). I use this to keep my personal files, vms,
 application data, backups,etc. I have no words for ZFS, if you don't know, I sugest that you look
-into it, it's one of the most incredibly pieces of tecnology that I have worked, and I think no
+into it, it's one of the most incredibly pieces of tecnology that I have worked it, and I think no
 other file system is close to achive what ZFS does.
 
 * **Snapraid**: 4 4TBs HDs in "RAID5. This software is AWESOME, it acts like a RAID system, but on a
 file system level, that way all the hard drives are formated normally in ext, nfst, xfs, whatever
-you want, and it then you assing one or two hard drives to store parity data (acting like a RAID5
+you want, and then you assing one or two hard drives to store parity data (acting like a RAID5
 or RAID6 setup), but it do not stripe this data, so the parity drive is separated from the data
 drives. This way, in a event of a drive failure, you can restore your data, and if all goes wrong
-an the restoration fails, you can scrap the drives for data, you're only going to lost the data on
+and the restoration fails, you can scrap the drives for data, you're only going to lose the data on
 the drive that failed.
 
 * **mergerFS**: Is a FUSE file system to pool all the drives managed by snapraid, it creates a
@@ -75,8 +75,8 @@ versions, but other OS's let you backup your whole build to a configuration file
 I was looking for a simple general use server distro, most of the NAS distros have tradeoffs or too
 much features that I won't use.
 
-This way, I settled with ubuntu server 20.0. Alltough I like OS
-on the Red Hat familily, you can't go wrong the Debian way too, and ZFS being a first class citzen
+This way, I settled with ubuntu server 20.04. Alltough I like OSes
+on the Red Hat family, you can't go wrong the Debian way too, and ZFS being a first class citzen
 on ubuntu was a major factor, all I have to do is apt install zfsutils-linux, and DONE.
 
 One feature that I like about the dedicated NAS OSes is a GUI to monitor what is happening on the
@@ -85,24 +85,26 @@ container managment like portainer, but it's way much.
 Then, I found Glances. It runs inside a container, and just give me a nice screen with all the info
 I need, and on top of that, it has a really nice integration with home assitant.
 
-foto glances
+![Glances](/assets/glances_screen.png)
 
-foto home assistant
+![Glances ingration](/assets/glances_homeassistant.png)
 
 ## Storage
 Nothing to change here, back then I spent over a week studying and researching about file systems,
-backups and redundancy, and I'm really happy with what I choose. BRTFS still don't seems to be a
+backups and redundancy, and I'm really happy with what I chose. BRTFS still don't seems to be a
 option, the only other software that I'm keeping an eye is bcacheFS, it appears to fit well my use
 case, I'm waiting to it get merged upstream to test it.
 
 ## Shares
 I'll keep using SAMBA, but I like it to run inside a container to facilitate future migrations.
-This image (https://github.com/dperson/samba) worked really well, all I had to do was add it to my
-docker compose and disable the samba service on the HOST, all my clients connected to it without a
-problem.
+This image ([dperson/samba](https://github.com/dperson/samba)) worked really well,
+all I had to do was add it to my docker compose and disable the samba service on the HOST, all my
+clients connected to it without a problem.
 
 ## Containers
-With docker being phased out on multiple places in favor of podman,
+With docker being phased out on multiple places in favor of podman, I considered migrating to it.
+But, podman it's not on Ubuntu's repository, and still lacks a tool like docker-compose. So I'll
+keep using docker-ce + docker-compose for now.
 
 ## Virtual Machines.
 I wanted to drop VirtualBox, altough in the end I was always able to do what I want, managin my VMS,
@@ -135,7 +137,8 @@ This was the installation of the new OS in a nutshell.
 7. Mount disk
 8. Run docker-compose
 9. Setup scripts
-10. Install home assistant OS with KVM (really nice tutorial here: https://community.home-assistant.io/t/install-home-assistant-os-with-kvm-on-ubuntu-headless-cli-only/254941)
+10. Install home assistant OS with KVM (really nice tutorial here:
+[Home Assistant Community Tutorial](https://community.home-assistant.io/t/install-home-assistant-os-with-kvm-on-ubuntu-headless-cli-only/254941))
 
 The whole process took about 3 hours, after solving the obligatory permissions issue, everything
 just worked.
