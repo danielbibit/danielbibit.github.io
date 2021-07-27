@@ -145,7 +145,7 @@ just worked.
 
 # Future
 I'm pretty happy with the system now, and anything that I would wanna change, its going to be pretty
-easy from here. Migrate from dockert to podman, or look into kubernetes, isolate the hard drives
+easy from here. Migrate from docker to podman, or look into kubernetes, isolate the hard drives
 in a machine separete from the containers, move the home assistant to a NUC, so many cool things to
 do.
 
