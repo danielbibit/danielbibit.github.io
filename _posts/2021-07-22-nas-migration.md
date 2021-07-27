@@ -106,7 +106,7 @@ With docker being phased out on multiple places in favor of podman, I considered
 But, podman it's not on Ubuntu's repository, and still lacks a tool like docker-compose. So I'll
 keep using docker-ce + docker-compose for now.
 
-## Virtual Machines.
+## Virtual Machines
 I wanted to drop VirtualBox, altough in the end I was always able to do what I want, managin my VMS,
 either through CLI or the Web GUI, was a pain the ass. Would like to migrate my VMS to KVM.
 

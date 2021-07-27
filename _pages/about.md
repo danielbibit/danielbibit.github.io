@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Daniel Moraes dos Santos
+Hi, welcome to my site, my name is Daniel Moraes.
 
 I'm a computer engineer student at Universidade Federal de Goiás.
 
