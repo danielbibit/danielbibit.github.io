@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+ol {
+  list-style-type: decimal;
+}
+
 .clearfix {
   &:before {
     content: " ";
