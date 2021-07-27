@@ -1,7 +1,8 @@
 // Typography
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono:400,700');
-$base-font-family: 'Overpass Mono', monospace;
-$heading-font-family: $base-font-family;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+$base-font-family: 'Cairo', sans-serif;
+$heading-font-family: 'Overpass Mono', monospace;
 
 // Font Sizes
 $base-font-size: 1em;
