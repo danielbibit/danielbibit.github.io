@@ -3,7 +3,7 @@ layout: post
 title: "Sqlite3 error on MergerFS"
 comments: false
 description: "How fix sqlite error mergerfs"
-keywords: "NAS, linux, filesystem, mergerfs"
+keywords: "NAS, linux, filesystem, mergerfs, debug"
 ---
 
 Today when setting up an application that used an sqlite database, I received this error:
