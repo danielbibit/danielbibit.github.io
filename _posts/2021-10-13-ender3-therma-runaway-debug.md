@@ -94,7 +94,7 @@ circuit, meaning the microcontroller would read a max voltage from the other res
 causing a low temperature read. But this temperature would be way lower than 150 degrees, this
 should trig a 'MINTEMP' error, as you can se in the code bellow. But if we analyze a part of the
 marlin firmware code, we can see the reads are sampled.
-```C
+```c
   /**
    * One sensor is sampled on every other call of the ISR.
    * Each sensor is read 16 (OVERSAMPLENR) times, taking the average.
@@ -149,7 +149,7 @@ marlin firmware code, we can see the reads are sampled.
 ```
 
 
-```C
+```c
 /**
  * Convert the raw sensor readings into actual Celsius temperatures and
  * validate raw temperatures. Bad readings generate min/maxtemp errors.
