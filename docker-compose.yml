@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  jekyll:
+    image: jekyll/jekyll
+    volumes:
+      - ./:/srv/jekyll/:Z
+    environment:
+      - JEKYLL_ENV=docker
+    ports:
+      - 4000:4000
+    # command: bundle update
+    #https://tonyho.net/jekyll-docker-windows-and-0-0-0-0/
+    command: jekyll serve --config  _config.yml,_config.docker.yml
+
