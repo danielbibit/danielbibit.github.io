@@ -1,0 +1,64 @@
+# Site settings
+title_left    : "Daniel"
+title_right   : "Moraes" # default: ""
+description   : "Personal Site"
+keywords      : "developer, engineer, docker, programming, linux, diy, nas, zfs, python"
+url           : "http://localhost:4000"
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
+
+google_analytics  : UA-XXXXX-XX
+
+# Build settings
+# permalink   : /:year/:title/
+permalink: pretty
+markdown    : kramdown
+highlighter : rouge
+
+source      : ./
+destination : ./_site
+
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
+
+# Author settings
+author:
+  name     : "Daniel Moraes"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug
+
+plugins_dir:
+  - jekyll-sitemap
+  - bourbon
+  - jekyll-paginate
+
+exclude:
+  - "gulp"
+  - "node_modules"
+  - "bower"
+  - "bower_components"
+  - "config.rb"
+  - "src"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "package.json"
+  - "gulpfile.js"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "script"
+  - "vendor"
+  - "thinkspace.gemspec"
