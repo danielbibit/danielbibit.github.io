@@ -10,5 +10,5 @@ services:
       - 4000:4000
     # command: bundle update
     #https://tonyho.net/jekyll-docker-windows-and-0-0-0-0/
-    command: jekyll serve --config  _config.yml,_config.docker.yml
+    command: jekyll serve --config  _config.yml,_config.docker.yml --incremental --watch --force_polling
 
