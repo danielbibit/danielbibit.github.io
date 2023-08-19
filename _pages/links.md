@@ -18,6 +18,11 @@ permalink: /links/
 [Gitlab](https://gitlab.com/danielbibit)
 
 
+<img align="left" alt="Lattes" width="22px" style="margin-right: 1px" src="../assets/icons/lattes.png" />
+
+[Lattes](http://lattes.cnpq.br/6233259120770166)
+
+
 <img align="left" alt="Instagram" width="22px" style="margin-right: 4px" src="../assets/icons/instagram.png" />
 
 [Instagram](https://www.instagram.com/danielbibit/)
