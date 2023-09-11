@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My journey with mechanical keyboards and QMK"
+title: "Mechanical Keyboards and Keymaps: How to make something useful out of your hobby"
 comments: false
 description: ""
 keywords: "keyboards, electronics, linux"
@@ -30,8 +30,6 @@ In this post I'll try to explain some of the advantages, differences and customi
 when using a mechanical keyboard, and latter I'll discuss how to use some of this features
 on a normal keyboard.
 
-
-TODO: Fotos teclados
 
 # Keyboard form factors
 The first difference that'll notice about mechanical keyboards, is that they come in all
@@ -199,6 +197,13 @@ now they are grouped together, and consistent across all my computers.
 ![Media and Macros](/assets/images/qmk/media_keyboard.png)
 *Media keys in red*
 
+About these keys, one interesting thing is the 'Term Edit' macro key,
+it basically is a macro for Ctrl-x Ctrl-e,
+this combination open the current command line on your default editor, really useful for long commands.
+
+Another thing is that being in the Left side of the keyboard,
+you can still use them while using the mouse, just use the old control key as the modifier.
+
 
 ## Navigation and Text editing
 On the left side of the keyboard, we have the navigation and text editing keys,
@@ -248,10 +253,48 @@ When using a native QMK keyboard, the process boils down to flashing the firmwar
 by qmk configurator, or simply using VIA to configure your keyboard.
 
 ## USB-USB Converter
+Another great option is to use a adapter called USB-USB converter,
+this way you can use any keyboard that you want, and still have all the QMK features.
+This is very handy if you already have a keyboard that you like, and don't want to buy a new one,
+or you have to use a keyboard from work or school, and want to customize it.
 
-# Software Options
-One
-## Kmonad
+The way the adapter works is basically a translator between your common keyboard,
+and a QMK keyboard. You make your keymap just like any other QMK keyboard and flash it to the converter,
+when you plug your keyboard on the USB, it'll behave like you programmed it.
+
+[Yao Wei's Blog](https://yaowei.dev/posts/usb-to-usb-converter/)
+was a really good resource for me when I was building my converter,
+you should check it out if you want to build one yourself.
+
+Yao's converter is made using an Arduino Pro Micro, I chose to use a Arduino Leonardo instead,
+because it needs basically no soldering or assembly,
+all you need is to attach the USB Host Shield on top of the Arduino and flash QMK.
+All I did extra was to 3D print a case for it, to protect it from any damage.
+
+![USB-USB Converter](/assets/images/qmk/usb_usb_3dprinted.jpg)
+*USB-USB Converter, Arduino Leonardo + USB Host Shield + 3D Print case*
+
+
+# Kmonad
+When you don't want to invest in hardware, or you need to map some keys on your laptop for example,
+you can use a software solution.
+
 Kmonad is a software that allows you to create a custom keymap for your keyboard,
 and use it on any OS.
-## Powertoys
+Written in haskell, it has worked flawlessly for me on Linux for more than two years,
+and almost as well compared to QMK, missing only some features like mouse support and Caps Word.
+
+The problem with kmonad is basically installation and setup, you'll probably need to compile it yourself,
+and write your own keymap, but once you get it working, it stays working.
+
+You can checkout my [github repository](https://github.com/danielbibit/daniel_qmk_setup/tree/main/kmonad)
+for a keymap example and service file for systemd.
+
+# Conclusion
+This post was a little difficult to write,
+I wanted to talk about keyboards and all the cool stuff that you can do with them,
+but I had to *kinda* restrain myself and focus on some points that I find really interesting.
+There are a lot of other topics to cover, ISO vs Ansi, Layouts(QWERTY, Dvorak, Colemak),
+keycaps, switches, build materials, programming and a lot more, this is a surprisingly rich hobby.
+But I think that I've covered the most important points to me,
+and I hope that it was a bit interesting to you.
