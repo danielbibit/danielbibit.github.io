@@ -126,7 +126,10 @@ And looking at your keyboard, the ESC key is pretty far from the home row,
 making you stretch your hand every time you want to press it.
 Even if you don't use vim, the ESC key is used a lot to lose focus, de-select something and exit.
 
-**TODO: Insert esc gif**
+![Esc key](/assets/images/qmk/esc.gif)
+
+*Esc on caps Vs. Default Esc*
+
 
 This way, making your Caps lock key send ESC, improves a lot the ergonomics of using the keyboard,
 even if you don't use vim. Most OS's allow you to swap Caps and ESC, this way you don't lose the Caps behavior.
@@ -136,8 +139,9 @@ Now that you're using the caps lock as an ESC, you might notice that you never h
 this means that we can assign the hold behavior of the caps key to something else.
 If you think about, you never hit you control key a single time (except for gaming), so why not use Caps as Control ?
 
-This in no way a new concept, if you look the keyboard layout of computer before the PC,
-you will notice that the control key in the now caps lock position was pretty common.
+This is not a new concept, if you look at the keyboard layout of computers before the PC,
+you'll notice that the control key is located in the now caps lock position,
+this was somewhat pretty common back then.
 
 ![Apple II Keyboard](/assets/images/qmk/appleiiekeyboard.jpg)
 *Apple II Keyboard*
@@ -155,13 +159,63 @@ Setting your Caps to Control it just really comfortable, I initially thought tha
 I've been using the default layout since the first day that I touched a computer,
 but all it took was a single week, and I'm not looking back.
 
-**TODO: Insert Control gif**
+![Default Control](/assets/images/qmk/ctrl_gif.gif)
 
+![Caps as Control](/assets/images/qmk/caps_ctrl_gif.gif)
+
+## Reaching other layers
+Previously I've talked briefly about layers, and went on a long rant about the caps lock.
+Now my goal is to cram as much functionality as possible, on your most used keys.
+What we accomplish with this, is reducing the travel distance of your fingers,
+and we can put useful keys that usually are far away and on non standard positions,
+such as screenshot and media keys, closer to your home row.
+
+With the caps lock reassignment, we've learned that we can use a single key, to two different functions,
+distinguishing between a key tap and a key hold.
+To accomplish our goal of keeping our most used keys closer to the home row, we'll again use this technique.
+
+![Layers](/assets/images/qmk/layer_keys.png)
+
+In the above image, you can see the modifiers keys colored.
+The Return key is a modifier when held, leading to the second layer.
+This key was chosen because it's on a really comfortable position on the main row,
+that you can reach with your pinky finger, just like the caps lock key.
+
+The Left Control key, now free, is also used as a modifier to the same second layer assigned to the Return key.
+We discussed that the control key is not on a great position to be a modifier,
+so that we put it on the caps lock, but the thing is, we can press it using the palm of our hand,
+and for keys on the opposite side of the keyboard, this is okay.
+
+
+With two keys, opposite to each other on the keyboard, we can now access the second layer easily,
+and I chose to separate the left and right side to different functions.
 
 ## Media keys and macros
-TODO: Imagem do layout com parte demarcada
+To the left side, accessing mainly with the return key,
+we have your media keys, some shortcuts, and macros.
+These keys I use all the time, and were previously scattered around the keyboard,
+now they are grouped together, and consistent across all my computers.
+
+![Media and Macros](/assets/images/qmk/media_keyboard.png)
+*Media keys in red*
+
+
 ## Navigation and Text editing
-TODO: Imagem do layout com parte demarcada
+On the left side of the keyboard, we have the navigation and text editing keys,
+on my 60% keyboard these keys don't even exist physically, but they are obviously needed.
+
+![Navigation and editing](/assets/images/qmk/edit_keyboard.png)
+*Navigation and editing keys in blue*
+
+I think I've accomplished some nice things here.
+First, the arrow keys are not only the in the home row, they are also VIM style,
+so I can basically have universal vim-like control, independent of the software that I'm using.
+Another nice thing is the redundant Up and Down with P and N, these are EMACS style keybindings,
+and are really useful to navigate through menus, if you're already accustomed to it.
+
+As I've said before, the bulk of my text editing is done with VIM motions on whatever text editor I'm using,
+but not all software is VIM friendly, and sometimes you need to edit text on a web browser,
+or a text box on a GUI software, and for these, this mapping is okay.
 
 # QMK
 At this point I might have convinced you that you should get a mechanical keyboard,
@@ -194,12 +248,6 @@ When using a native QMK keyboard, the process boils down to flashing the firmwar
 by qmk configurator, or simply using VIA to configure your keyboard.
 
 ## USB-USB Converter
-
-
-<!-- ## Managing keymaps
-### Docker container
-### Symbolic links
-### Submodule for QMK and keychron fork -->
 
 # Software Options
 One
