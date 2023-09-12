@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mechanical Keyboards and Keymaps: How to make something useful out of your hobby"
+title: "Mechanical Keyboards and Keymaps"
 comments: false
 description: ""
 keywords: "keyboards, electronics, linux"
