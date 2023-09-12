@@ -124,7 +124,7 @@ And looking at your keyboard, the ESC key is pretty far from the home row,
 making you stretch your hand every time you want to press it.
 Even if you don't use vim, the ESC key is used a lot to lose focus, de-select something and exit.
 
-![Esc key](/assets/images/qmk/esc.gif)
+![Esc key](/assets/images/qmk/esc_compressed.gif)
 
 *Esc on caps Vs. Default Esc*
 
@@ -157,9 +157,9 @@ Setting your Caps to Control it just really comfortable, I initially thought tha
 I've been using the default layout since the first day that I touched a computer,
 but all it took was a single week, and I'm not looking back.
 
-![Default Control](/assets/images/qmk/ctrl_gif.gif)
+![Default Control](/assets/images/qmk/ctrl_compressed.gif)
 
-![Caps as Control](/assets/images/qmk/caps_ctrl_gif.gif)
+![Caps as Control](/assets/images/qmk/caps_ctrl_compressed.gif)
 
 ## Reaching other layers
 Previously I've talked briefly about layers, and went on a long rant about the caps lock.
